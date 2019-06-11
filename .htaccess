@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^/semantic/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/img/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/css/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/css/fonts/(.*)$ [OR]
+RewriteCond %{REQUEST_URI} ^/js/(.*)$ [OR]
+RewriteRule ^.*$ - [L]
+</IfModule>

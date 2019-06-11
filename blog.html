@@ -1,0 +1,159 @@
+<div class="bio title-div">
+	<h2 class="bio title right"><img id="blog-icon" class="bio icon green svg" src="<?php echo get_bloginfo('template_directory'); ?>/img/blog-icon.svg"></img>blog</h2>
+</div>
+
+<br>
+
+<?php
+	$podcasts = get_cat_ID("podcast");
+?>
+<div class="ui grid">
+	<!-- <div class="row"> -->
+	<div class="five wide column">
+		<br>
+		<div class="bio hr-title blog">
+			<h3><span>conservação</span></h3>
+		</div>
+		<div class="left-padding">
+			<?php 
+				$category = get_cat_ID("conservacao");
+				$args = array(
+					'posts_per_page'    => 2,
+					'category'          => $category,
+					'category__not_in' 	=> $podcasts
+				);
+				$catPost = get_posts($args);
+				foreach ($catPost as $post) : setup_postdata($post); ?>
+					<div class="thumbnail">
+						<a href="<?php the_permalink() ?>">
+							<?php the_post_thumbnail() ?>
+						</a>
+					</div>
+				<?php  endforeach;?>
+			<br>
+			<br>
+			<div style="width: 100%; margin: 0 auto; text-align: center">
+				<a href="<?php base_url() ?>/category/conservacao" class="three-points yellow">. . .</a>
+			</div>
+		</div>
+
+	</div>
+	<div class="six wide column">
+		<div class="bio hr-title blog">
+			<h3><span>ciência e natureza</span></h3>
+		</div>
+		<div class="bio blog">
+			<?php 
+			$category = get_cat_ID("natureza");
+			$args = array(
+				'posts_per_page'    => 1,
+				'category'          => $category,
+				'category__not_in' 	=> array(0 => get_cat_ID("podcast"), 1 => get_cat_ID("conservacao"))
+			);
+			$catPost = get_posts($args);
+			foreach ($catPost as $post) : setup_postdata($post); ?>
+
+			<div class="blog thumbnail destaque">
+				<a href="<?php the_permalink() ?>">
+					<?php the_post_thumbnail() ?>
+				</a>
+			</div>	
+
+			<table>
+				<tr>
+					<td>
+						<img style="float: left" src="<?php echo get_bloginfo('template_directory'); ?>/img/newspaper.svg" class="svg" id="newspaper"
+						 alt="">
+					</td>
+					<td style="width: 100%;">
+						<div style="background-color: #ffc215; width: 100%; height: 2rem; padding: 5px">
+							<h5 class="blog title" style="width: 100%;"><span class="left" style="font-weight:100" id="resumo-author">
+							<?php the_author() ?></span><span class="right" id="resumo-date"><?php the_date("j/n/Y") ?></span></h5>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<div id="resumo-content">
+				<div class="outer">
+					<div class="resumo">
+						<?php the_excerpt() ?>
+					</div>
+				</div>
+				<div id="resumo-read" class="bio hr-read blog">
+					<h5><a href="<?php the_permalink() ?>"><span>ver mais</span></a></h5>
+				</div>
+			</div>
+
+			<?php  endforeach;?>
+		</div>
+		<br><br>
+		<div style="width: 100%; margin: 0 auto; text-align: center">
+			<a href="<?php base_url() ?>/category/natureza" class="three-points yellow">. . .</a>
+		</div>
+	</div>
+	<div class="five wide column">
+		<br>
+		<div class="bio hr-title blog">
+			<h3><span>artigos técnicos</span></h3>
+		</div>
+		<div class="right-padding">
+			<?php 
+				$category = get_cat_ID("artigos");
+				$args = array(
+					'posts_per_page'    => 2,
+					'category'          => $category,
+					'category__not_in' 	=> $podcasts
+				);
+				$catPost = get_posts($args);
+				foreach ($catPost as $post) : setup_postdata($post); ?>
+					<div class="thumbnail">
+						<a href="<?php the_permalink() ?>">
+							<?php the_post_thumbnail() ?>
+						</a>
+					</div>
+				<?php  endforeach;?>
+			<!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/img/podcasts/PODCAST_EP5.jpg" class="thumbnail" alt="">
+			<img src="<?php echo get_bloginfo('template_directory'); ?>/img/podcasts/PODCAST_EP2.jpg" class="thumbnail" alt=""> -->
+			<br>
+			<br>
+			<div style="width: 100%; margin: 0 auto; text-align: center">
+				<a href="<?php base_url() ?>/category/artigos" class="three-points yellow">. . .</a>
+			</div>
+		</div>
+	</div>
+	<!-- </div> -->
+</div>
+
+<br><br>
+<div class="bio hr-title blog">
+	<h2><span class="from-left">categorias</span></h2>
+	<div class="desktop">
+		<br>
+	</div>
+</div>
+<?php include 'snippets/categories.html' ?>
+
+<br><br><br>
+<div class="ui two column grid">
+	<div class="column">
+		<div class="bio hr-title blog">
+			<h2><span class="from-left">assine a newsletter</span></h2>
+		</div>
+		<img style="float: left" src="<?php echo get_bloginfo('template_directory'); ?>/img/message.svg" class="" id="newsletter"
+		alt="">
+	</div>
+	<div class="column">
+		<div style="border: 1px solid; height: 10rem;" class="bgreen">
+			<a href="www.lognature.com.br" class="white middle bold"><h2>www.lognature.com.br</h2></a>
+		</div>
+	</div>
+</div>
+<div class="center">
+	<br><br>
+	<a class="bio blog btn" onclick="$('#m-sugestao').modal('show')">
+		clique aqui e <b>sugira um tema!</b>
+	</a>
+</div>
+<br><br>
+
+<?php include 'snippets/suggest-form.html' ?>

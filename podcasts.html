@@ -1,0 +1,135 @@
+<div class="bio title-div">
+    <h2 class="bio title right"><img id="podcasts-icon" class="bio icon purple svg" src="<?php echo get_bloginfo('template_directory'); ?>/img/podcast-icon.svg"></img>podcast</h2>
+</div>
+
+<div class="carousel">
+    <?php 
+    $item_id = 0;
+    $cat_id = get_cat_ID("podcast");
+    $args = array(
+        'posts_per_page'    => 4,
+        'category'          => $cat_id
+    );
+    $catPost = get_posts($args); //change this
+    foreach ($catPost as $post) : setup_postdata($post); 
+    ?>
+    <div id="carousel-<?php echo $item_id ?>" class="carousel-item">
+        <a href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail() ?>
+        </a>
+        <!-- <h2>"><?php the_title(); ?></a></h2> 
+        <p><?php the_excerpt(); ?></p> -->
+        <div class="carousel-excerpt">
+            <table>
+                <tr>
+                    <td>
+                        <img style="float: left" src="<?php echo get_bloginfo('template_directory'); ?>/img/blablabla.svg" class="svg black" id="newspaper"
+                            alt="">
+                    </td>
+                    <td style="width: 100%;">
+                        <div style="background-color: #c900dd; width: 100%; height: 2rem; padding: 5px; color: white">
+                            <h5 class="blog title white" style="width: 100%;"><span class="left" style="font-weight:100" id="resumo-author">
+                            <?php the_author() ?></span><span class="right" id="resumo-date"><?php the_date("j/n/Y") ?></span></h5>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="resumo">
+                <?php the_excerpt() ?>
+            </div>
+            <div class="bio hr-read podcasts">
+                <h5><a href="<?php the_permalink() ?>"><span>ver mais</span></a></h5>
+            </div>
+        </div>
+    </div>
+    <?php $item_id++; endforeach;?>    
+</div>
+<div class="bio hr-title podcasts">
+    <h2><span class="from-left">categorias</span></h2>
+    <div class="desktop">
+        <br>
+    </div>
+</div>
+<?php include 'snippets/categories.html' ?>
+<br><br><br>
+<div class="ui two column grid">
+    <div class="column">
+        <div class="bio hr-title podcasts">
+            <h2><span class="from-left">assine o podcast:</span></h2>
+        </div>
+        <div class="ui two column grid">
+            <!-- Spotify -->
+            <div class="ui column">
+                <a href="https://open.spotify.com/show/3H2XMQLpkCLQGKVoFF2oke?si=YbdoAxHXSFasCsAlo7QXGw" class="middle-align m-l-10 dark-grey">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/spotify-icon.svg" class="svg main-icon" alt="">
+                </a>
+                <a href="https://open.spotify.com/show/3H2XMQLpkCLQGKVoFF2oke?si=YbdoAxHXSFasCsAlo7QXGw" class="middle-align dark-grey m-l-10" style="padding-left: 1rem">
+                    <h2 class="raleway thin middle-align inline">spotify</h2>
+                </a>
+            </div>
+
+            <!-- Google Podcasts -->
+            <div class="ui column">
+                <a class="middle-align m-l-10 dark-grey" href="https://www.google.com/podcasts?feed=aHR0cHM6Ly93d3cuYmlvbm90ZS5jb20uYnIvZmVlZC9wb2RjYXN0Lw">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/google-podcasts-icon.svg" class="svg main-icon" alt="">
+                </a>
+                <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly93d3cuYmlvbm90ZS5jb20uYnIvZmVlZC9wb2RjYXN0Lw" class="middle-align dark-grey">
+                    <h2 class="raleway thin middle-align inline" style="padding-left: 1rem">google podcasts</h2>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="ui two column grid">
+            <!-- Apple Podcasts -->
+            <div class="ui column">
+                <a class="middle-align m-l-10 dark-grey" href="https://itunes.apple.com/br/podcast/bionote/id1339439741?mt=2&ls=1">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/apple-podcasts-icon.svg" class="svg main-icon" alt="">
+                </a>
+                <a href="https://itunes.apple.com/br/podcast/bionote/id1339439741?mt=2&ls=1" class="middle-align dark-grey" style="padding-left: 1rem">
+                    <h2 class="raleway thin middle-align inline">apple podcasts</h2>
+                </a>
+            </div>
+
+            <!-- RSS -->
+            <div class="ui column">
+                <a class="middle-align m-l-10 dark-grey" href="https://www.bionote.com.br/feed/podcast/">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/rss-icon.svg" class="svg main-icon" alt="">
+                </a>
+                <a href="https://www.bionote.com.br/feed/podcast/" class="middle-align dark-grey" style="padding-left: 1rem">
+                    <h2 class="raleway thin middle-align inline">via RSS</h2>
+                </a>
+            </div>
+        </div>
+        <br>
+        <a href="<?php base_url() ?>/sobre-podcasts">
+            <div class="bio hr-title podcasts hover-scale minus">
+                <h2><span class="from-left">não sabe o que é podcast? clique aqui!</span></h2>
+            </div>
+        </a>
+    </div>
+    <div class="column">
+        <div style="border: 1px solid; height: 18rem;" class="bgreen">
+            <a href="www.lognature.com.br" class="white middle bold"><h2>www.lognature.com.br</h2></a>
+        </div>
+    </div>
+</div>
+<div class="center">
+    <br><br>
+    <a class="bio podcast btn" onclick="$('#m-sugestao').modal('show')">
+        clique aqui e <b>sugira um tema!</b>
+    </a>
+</div>
+
+<?php include 'snippets/suggest-form.html' ?>
+<div>
+
+</div>
+<br><br>
+<script>
+    $(document).ready(()=>{
+        $('.carousel').carousel({
+            padding: 250,
+            numVisible: 3
+        })
+    })
+</script>

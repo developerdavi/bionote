@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Bionote blog">
+    <meta name="author" content="LOG Nature">
+
+    <link rel="icon" href="<?php echo get_bloginfo('template_directory'); ?>/favicon.png" type="image/x-icon"/>
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    
+  
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700,900|Raleway:400,900|Montserrat" rel="stylesheet">
+    <link href="<?php echo get_bloginfo('template_directory'); ?>/blog.css" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <link href="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.css" rel="stylesheet">
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.min.js"></script>
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/modal.js"></script>
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/semantic/modal.css">
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/js/main.js"></script>
+    
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/css/materialize.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="<?php echo get_bloginfo('template_directory'); ?>/js/materialize.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      .banner {
+        /* background-attachment: scroll; */
+        background-image: url("<?php echo get_bloginfo('template_directory'); ?>/img/background-icon.svg");
+        background-repeat: no-repeat;
+        background-position-x: 150%;
+        background-position-y: 10%;
+        background-size: 57em;
+        background-origin: padding-box;
+        background-attachment: fixed;
+      }
+      .footer {
+        /* background-attachment: scroll; */
+        background-image: url("<?php echo get_bloginfo('template_directory'); ?>/img/background-icon.svg");
+        background-repeat: no-repeat;
+        background-position-x: 275%;
+        background-position-y: -20%;
+        background-size: 57em;
+        background-attachment: fixed;
+      }
+    </style>
+
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+    <title><?php bloginfo('name'); echo ' - '; bloginfo('description') ?></title>
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+    <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); wp_head(); ?>
+  </head>
+
+  <body>
+
+    <div class="banner">
+      <div class="container mobile">
+        <div class="ui grid">
+          <div class="two wide column green">
+            <i class="bars large icon middle"></i>
+          </div>
+          <div class="fourteen wide column">
+            <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.svg" class="banner-logo" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="ui container desktop">
+        <!-- <img src="<?php echo get_bloginfo('template_directory'); ?>/img/bionote-icon.svg" id="banner-icon" alt=""> -->
+        <div class="left">
+          <a href="<?php base_url() ?>/">
+            <img src="<?php echo get_bloginfo('template_directory'); ?>/img/logo.svg" class="banner-logo" alt="">
+          </a>
+        </div>
+        <div class="right">
+          <div class="ui secondary menu v-middle">
+            <a href="<?php base_url() ?>/" class="<?php echo $homepage == true ? 'active ' : '' ?>item">
+              início
+            </a>
+            <a href="<?php base_url() ?>/sobre/" class="<?php echo is_page('sobre-bionote') ? 'active ' : '' ?>item">
+              sobre
+            </a>
+            <a href="<?php base_url() ?>/podcasts/" class="<?php echo is_page('podcasts') ? 'active purple ' : '' ?>item">
+              podcast
+            </a>
+            <a href="<?php base_url() ?>/blog/" class="<?php echo is_page('blog') ? 'active yellow ' : '' ?>item">
+              blog
+            </a>
+            <a href="<?php base_url() ?>/contato/" class="<?php echo is_page('contato') ? 'active ' : '' ?>item">
+              contato
+            </a>
+            <div class="item">
+              <div class="ui left icon input transparent search-input">
+                <form action="<?php base_url() ?>">
+                  <i class="search link icon"></i>
+                  <input type="text" name="s" id="search">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
