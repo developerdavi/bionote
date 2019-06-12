@@ -9,7 +9,7 @@ get_header();
 <div class="ui container">
     <br>
     <div>
-        <img style="max-width: 100% src="<?php echo get_bloginfo('template_directory'); ?>/img/contato_banner.png" alt="">
+        <img style="max-width: 100%" src="<?php echo get_bloginfo('template_directory'); ?>/img/contato_banner.png" alt="">
     </div>
     <br><br>
     <div class="center">
