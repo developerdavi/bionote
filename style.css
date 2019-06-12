@@ -912,6 +912,24 @@ div.dividing-lines {
     font-family: 'Raleway', sans-serif;
 }
 
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #14ce4f !important;
+}
+
+input.wpcf7-form-control, #suggest-form textarea.wpcf7-form-control {
+    border: 2px solid #fff !important;
+    color: white;
+    width: 100%;
+    background: none;
+    width: 100%;
+    padding-left: 7px;
+    padding-top: 5px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
 .banner-logo {
     height: 7em;
 }
