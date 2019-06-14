@@ -140,7 +140,7 @@ Template Name: Homepage
   </div>
   <?php include 'snippets/categories.html' ?>
   <br><br><br>
-  <div class="ui two column grid">
+  <div class="ui two column stackable grid">
     <div class="column">
       <div class="bio hr-title green">
         <h2><span class="from-left">assine o podcast:</span></h2>

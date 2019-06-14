@@ -52,7 +52,7 @@
 </div>
 <?php include 'snippets/categories.html' ?>
 <br><br><br>
-<div class="ui two column grid">
+<div class="ui two column stackable grid">
     <div class="column">
         <div class="bio hr-title podcasts">
             <h2><span class="from-left">assine o podcast:</span></h2>
@@ -126,10 +126,21 @@
 </div>
 <br><br>
 <script>
+    function autoplay() {
+        $('.carousel').carousel('next');
+    }
+    var playing = setInterval(autoplay, 4500)
     $(document).ready(()=>{
         $('.carousel').carousel({
             padding: 250,
-            numVisible: 3
+            numVisible: 3,
+            indicators: true
+        })
+        $('.carousel').on('mouseover', () => {
+            clearInterval(playing)
+        })
+        $('.carousel').on('mouseout', () => {
+            playing = setInterval(autoplay, 4500)
         })
     })
 </script>
