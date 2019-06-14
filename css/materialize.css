@@ -56,6 +56,17 @@
   left: 0;
 }
 
+ul.indicators {
+  padding-left: 0
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel .carousel-item {
+    max-width: 90%;
+    height: 200px;
+  }
+}
+
 .carousel .carousel-item.active img {
   width: 100%;
   padding: 2px;
@@ -85,14 +96,14 @@
   height: 8px;
   width: 8px;
   margin: 24px 4px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
   border-radius: 50%;
 }
 
 .carousel .indicators .indicator-item.active {
-  background-color: #fff;
+  background-color: #c900dd;
 }
 
 .carousel.scrolling .carousel-item .materialboxed,
