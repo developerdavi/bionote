@@ -693,7 +693,7 @@ a:link, a:visited {
 }
 
 a.white {
-    color: white !important;
+    color: white;
 }
 
 .dropdown .menu {

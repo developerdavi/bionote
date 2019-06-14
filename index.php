@@ -201,10 +201,12 @@ Template Name: Homepage
       <div class="bio hr-title green">
         <h2><span class="from-left">assine a newsletter:</span></h2>
       </div>
-      <a class="cursor" onclick="$('#m-newsletter').modal('show')">
-        <img style="float: left" src="<?php echo get_bloginfo('template_directory'); ?>/img/message.svg" class=""
-          id="newsletter" alt="">
-      </a>
+      <div style="width: auto; margin: 0 auto">
+          <a class="" onclick="$('#m-newsletter').modal('show')" style="cursor: pointer; width: 50px; margin: 0 auto; display: block">
+            <img style="float: left" src="<?php echo get_bloginfo('template_directory'); ?>/img/message.svg" class="svg"
+              id="newsletter" alt="">
+          </a>
+      </div>
     </div>
     <div class="column">
       <a href="https://www.lognature.com.br">
