@@ -59,6 +59,10 @@ Tags: lognature, bionote, blog, podcasts
     }
 }
 
+a {
+    transition: all .1s
+}
+
 body, html, * {
     margin: 0;
 }
@@ -861,7 +865,9 @@ div.dividing-lines {
     width: 100%
 }
 
-
+textarea {
+    resize: none !important
+}
 
 .no-padding {
     padding: 0
@@ -885,7 +891,7 @@ div.dividing-lines {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     background-color: white;
-    transition: background-color 1s;
+    transition: background-color .5s;
     /* transition: color 1s; */
 }
 
@@ -905,7 +911,7 @@ div.dividing-lines {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     background-color: white;
-    transition: background-color 1s;
+    transition: background-color .5s;
     /* transition: color 1s; */
 }
 
@@ -925,7 +931,7 @@ div.dividing-lines {
     font-family: 'Arvo', sans-serif;
     font-size: 1.5rem;
     background: none;
-    transition: background-color 1s;
+    transition: background-color .5s;
     /* margin: 0 auto; */
     /* transition: color 1s; */
 }
@@ -946,7 +952,7 @@ div.dividing-lines {
     font-family: 'Arvo', sans-serif;
     font-size: 1.5rem;
     background: none;
-    transition: background-color 1s;
+    transition: background-color .5s;
     /* margin: 0 auto; */
     /* transition: color 1s; */
 }
