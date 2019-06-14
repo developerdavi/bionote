@@ -32,7 +32,7 @@ get_header(); ?>
 				<div class="bio hr-title podcasts">
 					<h3><span
 							style="float: right; padding-left: 10px; padding-right: 0px; line-height: 0.3em; font-size: 1.7rem; margin-top: -0.2rem"><a
-								href="https://www.bionote.com.br/dicas/voce-ja-ouviu-falar-em-podcast/">não sabe o que é um podcast?
+								href="<?php base_url() ?>/sobre-podcasts">não sabe o que é um podcast?
 								clique aqui!</a></span></h3>
 				</div>
 				<?php else: ?>
