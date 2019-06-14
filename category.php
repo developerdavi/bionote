@@ -47,7 +47,7 @@ if ( comments_open() || get_comments_number() ) :
 endif;
 
 ?>
-    <div class="ui two column grid">
+    <div class="ui two column stackable grid">
         <div class="ui column">
             <div class="cat-post">
                 <div class="thumbnail">
