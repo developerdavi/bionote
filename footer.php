@@ -1,7 +1,7 @@
     <div class="footer">
-        <div class="ui container middle">
-            <div class="ui three column grid">
-                <div class="column">
+        <div class="ui container middle" style="margin: 0 !important">
+            <div class="ui three column stackable grid">
+                <div class="column desktop">
                     <div class="middle-align" style="height: 80px; width: 10%">
                         <div class="ui four column grid">
                             <!-- <div class="ui column"></div> -->
