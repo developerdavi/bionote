@@ -44,7 +44,37 @@ get_header();
 
         <br><br>
 
-        <div class="ui eight column grid">
+        <div class="ui column grid mobile">
+            <!-- <div class=" wide column"></div> -->
+
+            <div class="four wide column">
+                <a href="https://www.facebook.com/logmateriais/">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/facebook-outline.svg" class="bio footer-icon" alt="">
+                </a>
+            </div>
+        
+            <div class="four wide column">
+                <a href="https://www.instagram.com/log_nature/">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/instagram-outline.svg" class="bio footer-icon" alt="">
+                </a>
+            </div>
+        
+            <div class="four wide column">
+                <a href="https://pt.linkedin.com/company/lognature">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/linkedin-outline.svg" class="bio footer-icon" alt="">
+                </a>
+            </div>
+        
+            <div class="four wide column">
+                <a href="https://www.youtube.com/channel/UCsgvnoBMLj_ruR2fGNDr5Iw">
+                    <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/youtube-outline.svg" class="bio footer-icon" alt="">
+                </a>
+            </div>
+
+            <!-- <div class="four wide column"></div> -->
+        </div>
+
+        <div class="ui eight column grid desktop">
             <div class="ui column"></div>
             <div class="ui column"></div>
 
