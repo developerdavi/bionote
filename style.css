@@ -14,10 +14,12 @@ Tags: lognature, bionote, blog, podcasts
     .categories.container {
         padding: 12px !important
     }
-    /* .category .gray-filter:hover {
-        transform: scale(.9);
-        cursor: pointer;
-    } */
+    .left-padding {
+        padding-left: 1rem;
+    }
+    .right-padding {
+        padding-right: 1rem;
+    }
 }
 /* MOBILE */
 @media only screen and (max-width: 768px) {
@@ -85,14 +87,6 @@ body, html, * {
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     transition: all .5s ease;
-}
-
-.left-padding {
-    padding-left: 1rem;
-}
-
-.right-padding {
-    padding-right: 1rem;
 }
 
 .thumbnail img {
@@ -176,6 +170,37 @@ td h3 {
 .banner .container .menu {
     /* margin-top: 5%; */
     font-family: 'Raleway', sans-serif;
+}
+
+.ui.sidebar .item {
+    background: none !important;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.3rem;
+    border: none !important
+}
+
+.ui.sidebar .item.active {
+    background: none !important
+}
+
+.ui.sidebar {
+    background-color: #201e20 !important;
+    border: none !important
+}
+
+.ui.sidebar .item.purple {
+    color: #c900dd !important;
+    font-weight: bold
+}
+
+.ui.sidebar .item.green {
+    color: #14ce4f !important;
+    font-weight: bold
+}
+
+.ui.sidebar .item.yellow {
+    color: #ffc215 !important;
+    font-weight: bold
 }
 
 .home-icon {
@@ -664,7 +689,18 @@ a:link, a:visited {
 }
 
 a.white {
-    color: white;
+    color: white !important;
+}
+
+.dropdown .menu {
+    background-color: #201e20 !important;
+}
+
+.banner .dropdown .menu {
+    margin-left: -130px;
+    position: fixed !important;
+    z-index: 999 !important;
+    width: 150px;
 }
 
 .post img {
@@ -969,7 +1005,7 @@ input.wpcf7-form-control, #suggest-form textarea.wpcf7-form-control {
 }
 
 .transparent {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 a:hover {
