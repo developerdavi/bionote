@@ -2,7 +2,7 @@
 Theme Name: Bionote
 Author: Davi Rodrigues, Izabella, Pedro Torres
 Description: Bionote blog theme for Wordpress
-Version: 0.0.1
+Version: 1.0.0
 Tags: lognature, bionote, blog, podcasts
 */
 
@@ -19,6 +19,10 @@ Tags: lognature, bionote, blog, podcasts
     }
     .right-padding {
         padding-right: 1rem;
+    }
+    .d-p-15 {
+        padding-left: 15% !important;
+        padding-right: 15% !important;
     }
 }
 /* MOBILE */
@@ -55,9 +59,32 @@ Tags: lognature, bionote, blog, podcasts
         top: 40% !important;
     }
     div.banner {
-        height:
+        /* height: */
+    }
+    .m-l-p {
+        padding-left: 14px !important
+    }
+    .m-r-p {
+        padding-right: 14px !important
+    }
+    .m-n-p {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .d-p-15 {
+        padding-left: 7.5px !important;
+        padding-right: 7.5px !important;
+    }
+    .post-tag {
+        font-size: 1rem
+    }
+    .post-title {
+        font-size: 1.5rem
     }
 }
+
+::-moz-selection { background: #14ce4f; color: white }
+::selection { background: #14ce4f; color: white }
 
 a {
     transition: all .1s
@@ -288,10 +315,26 @@ td h3 {
     font-family: 'Raleway', sans-serif;
 }
 
+div.column.post {
+    padding: 0 !important
+}
+
+.hr-yellow {
+    background-color: #ffc215;
+    height: 2px;
+    border: 1px solid #ffc215;
+}
+
 .hr-green {
     background-color: #14ce4f;
     height: 2px;
     border: 1px solid #14ce4f;
+}
+
+.hr-purple {
+    background-color: #c900dd;
+    height: 2px;
+    border: 1px solid #c900dd;
 }
 
 .bio.title {
@@ -708,7 +751,8 @@ a.white {
 }
 
 .post img {
-    max-width: 100%;
+    max-width: 94vw;
+    width: 100%;
     height: auto;
     border: 1px solid black;
 }

@@ -18,10 +18,10 @@
 <!-- <h2 class="black arvo italic">todos os posts da categoria <?php single_cat_title(); ?></h2> -->
 
 <div class="bio hr-title green">
-    <h3><span style="float: right; padding-left: 10px; padding-right: 0px; line-height: 0.3em; font-size: 1.7rem; margin-top: -0.2rem; text-transform: lowercase">categoria "<?php single_cat_title(); ?>"</span></h3>
+    <h3><span style="float: right; padding-left: 10px; padding-right: 0px; line-height: 0.3em; font-size: 1.7rem; margin-top: -0.2rem; text-transform: lowercase"><?php single_cat_title(); ?></span></h3>
 </div>
 
-<br><br>
+<br>
 
 <?php
 $currCat = get_category(get_query_var('cat'));

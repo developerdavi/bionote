@@ -19,10 +19,11 @@ get_header();
 
     <div style="max-width: 70%; margin: 0 auto" class="center">
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-        the_content();
-        endwhile; else: ?>
-        <p>Sorry, no posts matched your criteria.</p>
+        <?php if (have_posts()) : while (have_posts()) : the_post();
+                the_content();
+            endwhile;
+        else : ?>
+            <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
 
         <br><br><br><br><br><br>
@@ -30,7 +31,7 @@ get_header();
         <img class="about-icon large" src="<?php echo get_bloginfo('template_directory'); ?>/img/LOG_Bionote.svg" alt="">
 
         <br><br><br>
-        
+
         <p style="font-size: 1.2rem" class="raleway">
             O Bionote é uma iniciativa da Log Nature, uma empresa especializada<br>
             na venda de materiais para a área biológica e de pesquisa ambiental
@@ -52,19 +53,19 @@ get_header();
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/facebook-outline.svg" class="bio footer-icon" alt="">
                 </a>
             </div>
-        
+
             <div class="four wide column">
                 <a href="https://www.instagram.com/log_nature/">
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/instagram-outline.svg" class="bio footer-icon" alt="">
                 </a>
             </div>
-        
+
             <div class="four wide column">
                 <a href="https://pt.linkedin.com/company/lognature">
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/linkedin-outline.svg" class="bio footer-icon" alt="">
                 </a>
             </div>
-        
+
             <div class="four wide column">
                 <a href="https://www.youtube.com/channel/UCsgvnoBMLj_ruR2fGNDr5Iw">
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/youtube-outline.svg" class="bio footer-icon" alt="">
@@ -83,19 +84,19 @@ get_header();
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/facebook-outline.svg" class="bio footer-icon" alt="">
                 </a>
             </div>
-        
+
             <div class="ui column">
                 <a href="https://www.instagram.com/log_nature/">
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/instagram-outline.svg" class="bio footer-icon" alt="">
                 </a>
             </div>
-        
+
             <div class="ui column">
                 <a href="https://pt.linkedin.com/company/lognature">
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/linkedin-outline.svg" class="bio footer-icon" alt="">
                 </a>
             </div>
-        
+
             <div class="ui column">
                 <a href="https://www.youtube.com/channel/UCsgvnoBMLj_ruR2fGNDr5Iw">
                     <img src="<?php echo get_bloginfo('template_directory'); ?>/img/SVG/youtube-outline.svg" class="bio footer-icon" alt="">
@@ -103,7 +104,7 @@ get_header();
             </div>
 
             <div class="ui column"></div>
-            <div class="ui column"></div>    
+            <div class="ui column"></div>
         </div>
     </div>
 

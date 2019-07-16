@@ -21,7 +21,7 @@ Template Name: Homepage
 
       <br>
 
-      <div class="p-15">
+      <div class="d-p-15">
         <h1 class="center black italic">ouça os últimos episódios:</h1>
         <div class="dividing-lines purple"></div>
         <div class="center">
@@ -37,30 +37,30 @@ Template Name: Homepage
 				$catPost = get_posts($args);
                 foreach ($catPost as $post) : setup_postdata($post); ?>
         <?php
-                        $categoria = get_the_category($podcasts);
-                        
-                        $post_id = get_category($podcasts);
-                        $gambiarra = 0;
-                        
-                        if (isset($categories[get_cat_ID($categoria)])) {
-                            $gambiarra = $categories[get_cat_ID($categoria)];
-                            $categories[get_cat_ID($categoria)] += 1;
-                        } else {
-                            $categories[get_cat_ID($categoria)] = 1;
-                        }
-                        
-                        $post_id = $post_id->count - $gambiarra;
-                        $titulo = get_the_title();
-                        $titulo = explode(urldecode("%26%238211%3B"), $titulo)[1];
-                    ?>
+            $categoria = get_the_category($podcasts);
+            
+            $post_id = get_category($podcasts);
+            $gambiarra = 0;
+            
+            if (isset($categories[get_cat_ID($categoria)])) {
+                $gambiarra = $categories[get_cat_ID($categoria)];
+                $categories[get_cat_ID($categoria)] += 1;
+            } else {
+                $categories[get_cat_ID($categoria)] = 1;
+            }
+            
+            $post_id = $post_id->count - $gambiarra;
+            $titulo = get_the_title();
+            $titulo = explode(urldecode("%26%238211%3B"), $titulo)[1];
+        ?>
         <div class="hover-scale minus hover-purple">
           <div class="home thumbnail">
             <a href="<?php the_permalink() ?>">
               <?php the_post_thumbnail() ?>
             </a>
           </div>
-          <h3 class="no-margin montserrat inherit">Episódio #<?php echo $post_id ?>:</h3>
-          <h2 class="no-margin montserrat bold inherit"><?php echo $titulo ?></h2>
+          <h3 class="no-margin montserrat inherit post-tag">Episódio #<?php echo $post_id ?>:</h3>
+          <h2 class="no-margin montserrat bold inherit post-title"><?php echo $titulo ?></h2>
           <br>
         </div>
         <?php  endforeach;?>
@@ -78,7 +78,7 @@ Template Name: Homepage
 
       <br>
 
-      <div class="p-15">
+      <div class="d-p-15">
         <h1 class="center black italic">leia os últimos artigos:</h1>
         <div class="dividing-lines yellow"></div>
         <div class="center">
@@ -120,8 +120,8 @@ Template Name: Homepage
               <?php the_post_thumbnail() ?>
             </a>
           </div>
-          <h3 class="no-margin montserrat inherit"><?php echo $categoria . " #" . $post_id ?>:</h3>
-          <h2 class="no-margin montserrat bold inherit"><?php echo $titulo ?></h2>
+          <h3 class="no-margin montserrat inherit post-tag"><?php echo $categoria . " #" . $post_id ?>:</h3>
+          <h2 class="no-margin montserrat bold inherit post-title"><?php echo $titulo ?></h2>
           <br>
         </div>
         <?php  endforeach;?>

@@ -30,10 +30,10 @@ $search_query = $search->query['s'];
 <div class="ui twelve wide column">
 
 <div class="bio hr-title green">
-    <h3><span style="float: right; padding-left: 10px; padding-right: 0px; line-height: 0.3em; font-size: 1.7rem; margin-top: -0.2rem; text-transform: lowercase">resultados da pesquisa por "<?php echo $search_query ?>"</span></h3>
+    <h3><span style="float: right; padding-left: 10px; padding-right: 0px; line-height: 0.3em; font-size: 1.7rem; margin-top: -0.2rem; text-transform: lowercase">"<?php echo $search_query ?>"</span></h3>
 </div>
 
-<br><br>
+<br>
 
 <?php
 

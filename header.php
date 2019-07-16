@@ -143,7 +143,7 @@
                     <i class="search link icon"></i>
                   </td>
                   <td style="width: 100%">
-                    <input type="text" name="s" id="search" style="height: 1rem">
+                    <input type="text" name="s" id="search" style="height: 1rem; width: 90%">
                   </td>
                 </tr>
               </table>
