@@ -167,7 +167,7 @@
             <a href="<?php base_url() ?>/" class="<?php echo is_front_page() ? 'active ' : '' ?>item">
               início
             </a>
-            <a href="<?php base_url() ?>/sobre/" class="<?php echo is_page('sobre-bionote') ? 'active ' : '' ?>item">
+            <a href="<?php base_url() ?>/sobre-bionote/" class="<?php echo is_page('sobre-bionote') ? 'active ' : '' ?>item">
               sobre
             </a>
             <a href="<?php base_url() ?>/podcasts/"
