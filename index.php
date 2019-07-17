@@ -59,9 +59,11 @@ Template Name: Homepage
               <?php the_post_thumbnail() ?>
             </a>
           </div>
-          <h3 class="no-margin montserrat inherit post-tag">Episódio #<?php echo $post_id ?>:</h3>
-          <h2 class="no-margin montserrat bold inherit post-title"><?php echo $titulo ?></h2>
-          <br>
+          <div class="home title">
+            <h3 class="no-margin montserrat inherit post-tag">Episódio #<?php echo $post_id ?>:</h3>
+            <h2 class="no-margin montserrat bold inherit post-title"><?php echo $titulo ?></h2>
+            <br>
+          </div>
         </div>
         <?php  endforeach;?>
         <div style="width: 100%; margin: 0 auto; text-align: center">
@@ -120,9 +122,11 @@ Template Name: Homepage
               <?php the_post_thumbnail() ?>
             </a>
           </div>
-          <h3 class="no-margin montserrat inherit post-tag"><?php echo $categoria . " #" . $post_id ?>:</h3>
-          <h2 class="no-margin montserrat bold inherit post-title"><?php echo $titulo ?></h2>
-          <br>
+          <div class="home title">
+            <h3 class="no-margin montserrat inherit post-tag"><?php echo $categoria . " #" . $post_id ?>:</h3>
+            <h2 class="no-margin montserrat bold inherit post-title"><?php echo $titulo ?></h2>
+            <br>
+          </div>
         </div>
         <?php  endforeach;?>
         <div style="width: 100%; margin: 0 auto; text-align: center">
