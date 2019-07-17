@@ -109,7 +109,7 @@
                   <a href="<?php base_url() ?>/" class="<?php echo is_front_page() ? 'active green ' : 'white ' ?>item">
                     início
                   </a>
-                  <a href="<?php base_url() ?>/sobre/"
+                  <a href="<?php base_url() ?>/sobre-bionote/"
                     class="<?php echo is_page('sobre-bionote') ? 'active green ' : 'white ' ?>item">
                     sobre
                   </a>
