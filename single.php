@@ -205,7 +205,6 @@ get_header(); ?>
 			<?php include 'snippets/assine.html' ?>
 			<script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.min.js"></script>
   		<script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/modal.js"></script>
-			<?php include 'snippets/suggest-form.html' ?>
 		<?php endif; ?>
 		<br><br>
 	</main>
