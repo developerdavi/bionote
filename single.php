@@ -76,12 +76,12 @@ get_header(); ?>
 						</div>
 						<br>
 						<br>
-						<?php if ($avatar = get_avatar(the_author_meta()) !== FALSE) : ?>
-							<!-- <img src="<?php echo $avatar; ?>" alt=""> -->
+						<?php if ($avatar = get_avatar(the_author_meta()) !== FALSE && strlen($avatar) > 3) : ?>
+							<img src="<?php echo $avatar; ?>" alt="">
 						<?php else : ?>
 							<!-- <img src="/images/no-image-default.jpg"> -->
+							<img class="avatar" src="<?php echo get_bloginfo('template_directory'); ?>/img/avatar.png" alt="">
 						<?php endif; ?>
-						<img class="avatar" src="<?php echo get_bloginfo('template_directory'); ?>/img/avatar.png" alt="">
 						<h3 class="author name no-margin bold">
 							<?php echo get_the_author() ?>
 						</h3>
