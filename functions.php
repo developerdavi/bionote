@@ -19,6 +19,7 @@ function endsWith($string, $endString)
 
 function base_url() {
     // echo '/bionote';
+    echo get_site_url();
 }
 
 add_theme_support( 'post-thumbnails' ); 
