@@ -44,6 +44,5 @@
     </div>
     </div>
     <?php wp_footer() ?>
-    <script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.min.js"></script>
   </body>
 </html>

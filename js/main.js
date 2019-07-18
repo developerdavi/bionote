@@ -30,4 +30,8 @@ $(document).ready(() => {
         }, 'xml');
         
     });
+
+    $('#sidebar-button').click(() => {
+        $('.ui.sidebar').sidebar('toggle')
+    })
 })
