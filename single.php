@@ -76,7 +76,7 @@ get_header(); ?>
 						</div>
 						<br>
 						<br>
-						<?php if ($avatar = get_avatar_url(the_author_meta()) !== FALSE: ?>
+						<?php if ($avatar = get_avatar_url(the_author_meta()) !== FALSE) : ?>
 							<img src="<?php echo $avatar; ?>" alt="">
 						<?php else : ?>
 							<!-- <img src="/images/no-image-default.jpg"> -->
