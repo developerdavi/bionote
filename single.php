@@ -76,8 +76,10 @@ get_header(); ?>
 						</div>
 						<br>
 						<br>
-						<?php if ($avatar = get_avatar_url(the_author_meta()) !== FALSE) : ?>
-							<img src="<?php echo $avatar; ?>" alt="">
+						<?php 
+							$avatar = get_avatar_url($post->post_author, array('size'=>'300'));
+							if ($avatar != false)	: ?>
+							<img class="avatar" src="<?php echo $avatar; ?>" alt="">
 						<?php else : ?>
 							<!-- <img src="/images/no-image-default.jpg"> -->
 							<img class="avatar" src="<?php echo get_bloginfo('template_directory'); ?>/img/avatar.png" alt="">
