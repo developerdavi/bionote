@@ -203,6 +203,12 @@ get_header(); ?>
 		<br><br>
 		<?php if ($podcast) : ?>
 			<?php include 'snippets/assine.html' ?>
+			<div class="center">
+        <a class="bio podcast btn" onclick="$('#m-sugestao').modal('show')">
+            clique aqui e <b>sugira um tema!</b>
+        </a>
+			</div>
+			<?php include 'snippets/suggest-form.html' ?>
 		<?php endif; ?>
 		<br><br>
 	</main>

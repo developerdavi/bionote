@@ -18,13 +18,13 @@
   <!-- Custom styles for this template -->
   <link href="https://fonts.googleapis.com/css?family=Arvo:400,700,900|Raleway:400,900|Montserrat" rel="stylesheet">
   <link href="<?php echo get_bloginfo('template_directory'); ?>/blog.css" rel="stylesheet">
+  <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/semantic/modal.css">
+  <link href="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="<?php echo get_bloginfo('template_directory'); ?>/js/materialize.js"></script>
-  <link href="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.css" rel="stylesheet">
   <script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.min.js"></script>
   <script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/modal.js"></script>
-  <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/semantic/modal.css">
   <script src="<?php echo get_bloginfo('template_directory'); ?>/js/main.js"></script>
 
   <!-- Compiled and minified CSS -->
