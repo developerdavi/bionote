@@ -135,7 +135,7 @@
         <div style="width: 100%">
           <!-- <div class="item center"> -->
           <div class="ui left icon input transparent search-input center"
-            style="width: 80%; margin: 0 auto; float: none; display: block">
+            style="width: 90%; margin: 0 auto; float: none; display: block">
             <form action="<?php base_url() ?>">
               <table style="margin-top: -4px">
                 <tr>
