@@ -22,7 +22,7 @@
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="<?php echo get_bloginfo('template_directory'); ?>/js/materialize.js"></script>
   <link href="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.css" rel="stylesheet">
-  <script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.min.js"></script>
+  <!-- <script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.min.js"></script> -->
   <script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/modal.js"></script>
   <link rel="stylesheet" href="<?php echo get_bloginfo('template_directory'); ?>/semantic/modal.css">
   <script src="<?php echo get_bloginfo('template_directory'); ?>/js/main.js"></script>
