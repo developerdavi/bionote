@@ -330,7 +330,8 @@ td h3 {
 }
 
 div.column.post {
-    padding: 0 !important
+    padding: 0 !important;
+    overflow: hidden;
 }
 
 .hr-yellow {
@@ -764,7 +765,7 @@ a.white {
     width: 150px;
 }
 
-.post img {
+.post img, .post iframe {
     max-width: 94vw;
     width: 100%;
     height: auto;
