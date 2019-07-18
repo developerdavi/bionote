@@ -205,11 +205,6 @@ get_header(); ?>
 			<?php include 'snippets/assine.html' ?>
 			<script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/semantic.min.js"></script>
   		<script src="<?php echo get_bloginfo('template_directory'); ?>/semantic/modal.js"></script>
-			<div class="center">
-        <a class="bio podcast btn" onclick="$('#m-sugestao').modal('show')">
-            clique aqui e <b>sugira um tema!</b>
-        </a>
-			</div>
 			<?php include 'snippets/suggest-form.html' ?>
 		<?php endif; ?>
 		<br><br>
