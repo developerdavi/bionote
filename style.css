@@ -1153,10 +1153,11 @@ a:hover {
     
 }
 
-#post-blablabla {
+#post-cassette-tape {
 	height: 7rem;
 	left: 0;
-	float: left !important;
+    float: left !important;
+    transform: scale(.7);
 }
 
 #post-links {

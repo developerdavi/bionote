@@ -72,7 +72,7 @@ get_header(); ?>
 							<?php the_category() ?>
 						</div>
 						<div style="height: 0rem;">
-							<img style="float: left" src="<?php echo get_bloginfo('template_directory'); ?>/img/<?php echo $podcast ? 'blablabla' : 'newspaper' ?>.svg" class="svg" id="post-<?php echo $podcast ? 'blablabla' : 'newspaper' ?>" alt="">
+							<img style="float: left" src="<?php echo get_bloginfo('template_directory'); ?>/img/<?php echo $podcast ? 'cassette-tape' : 'newspaper' ?>.svg" class="svg" id="post-<?php echo $podcast ? 'cassette-tape' : 'newspaper' ?>" alt="">
 						</div>
 						<br>
 						<br>

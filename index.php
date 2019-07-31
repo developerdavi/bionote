@@ -25,8 +25,8 @@ Template Name: Homepage
         <h1 class="center black italic">ouça os últimos episódios:</h1>
         <div class="dividing-lines purple"></div>
         <div class="center">
-          <img class="center svg home-icon" src="<?php echo get_bloginfo('template_directory'); ?>/img/blablabla.svg"
-            id="post-blablabla" alt="">
+          <img class="center svg home-icon" src="<?php echo get_bloginfo('template_directory'); ?>/img/cassette-tape.svg"
+            id="post-cassette-tape" alt="">
         </div>
         <?php 
 				$podcasts = get_cat_ID("podcast");

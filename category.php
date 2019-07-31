@@ -61,7 +61,7 @@ endif;
             <table>
 				<tr>
 					<td>
-						<img style="float: left" src="<?php echo get_bloginfo('template_directory'); ?>/img/<?php echo $podcast ? 'blablabla' : 'newspaper'?>.svg" class="svg" id="newspaper"
+						<img style="float: left" src="<?php echo get_bloginfo('template_directory'); ?>/img/<?php echo $podcast ? 'cassette-tape' : 'newspaper'?>.svg" class="svg" id="newspaper"
 						 alt="">
 					</td>
 					<td style="width: 100%;">
