@@ -64,8 +64,8 @@
       /* background-attachment: scroll; */
       background-image: url("<?php echo get_bloginfo('template_directory'); ?>/img/background-icon.svg");
       background-repeat: no-repeat;
-      background-position-x: 275%;
-      background-position-y: -20%;
+      background-position-x: 150%;
+      background-position-y: -10%;
       background-size: 57em;
       background-attachment: fixed;
     }
