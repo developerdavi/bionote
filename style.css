@@ -43,6 +43,15 @@ Tags: lognature, bionote, blog, podcasts
         background-origin: padding-box;
         background-attachment: fixed;
     }
+    .footer {
+        height: 13em !important;
+        background-repeat: no-repeat;
+        background-position-x: 140% !important;
+        background-position-y: 100% !important;
+        background-size: 20em !important;
+        background-origin: padding-box;
+        background-attachment: fixed;
+    }
     .category {
         height: 9rem !important;
     }
