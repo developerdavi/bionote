@@ -17,6 +17,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta name="description" content="Bionote blog">
+  <meta name="theme-color" content="#201e20" />
   <meta name="author" content="LOG Nature">
 
   <link rel="icon" href="<?php echo get_bloginfo('template_directory'); ?>/favicon.png" type="image/x-icon" />
