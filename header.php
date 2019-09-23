@@ -16,7 +16,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="Bionote blog">
+  <meta name="description" content="Oi! Este é o Bionote. Canal de conteúdo Log Nature. Aqui você encontra curiosidades sobre vários aspectos da vida, em formato blog e podcast.">
   <meta name="theme-color" content="#201e20" />
   <meta name="author" content="LOG Nature">
 
