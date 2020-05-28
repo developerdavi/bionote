@@ -35,23 +35,9 @@ Template Name: Homepage
 					'category'          => $podcasts
 				);
 				$catPost = get_posts($args);
-                foreach ($catPost as $post) : setup_postdata($post); ?>
+        foreach ($catPost as $post) : setup_postdata($post); ?>
         <?php
-            $categoria = get_the_category($podcasts);
-            
-            $post_id = get_category($podcasts);
-            $gambiarra = 0;
-            
-            if (isset($categories[get_cat_ID($categoria)])) {
-                $gambiarra = $categories[get_cat_ID($categoria)];
-                $categories[get_cat_ID($categoria)] += 1;
-            } else {
-                $categories[get_cat_ID($categoria)] = 1;
-            }
-            
-            $post_id = $post_id->count - $gambiarra;
-            $titulo = get_the_title();
-            $titulo = explode(urldecode("%26%238211%3B"), $titulo)[1];
+          $titulo = get_the_title();
         ?>
         <div class="hover-scale minus hover-purple">
           <div class="home thumbnail">
@@ -60,7 +46,6 @@ Template Name: Homepage
             </a>
           </div>
           <div class="home title">
-            <h3 class="no-margin montserrat inherit post-tag">Episódio #<?php echo $post_id ?>:</h3>
             <h2 class="no-margin montserrat bold inherit post-title"><?php echo $titulo ?></h2>
             <br>
           </div>
@@ -90,32 +75,18 @@ Template Name: Homepage
 
         <?php 
 
-                $categories = array();
+        $categories = array();
 				
 				$args = array(
 					'posts_per_page'    => 3,
 					'category__not_in' 	=> $podcasts
 				);
-				$catPost = get_posts($args);
-                foreach ($catPost as $post) : setup_postdata($post); ?>
+        $catPost = get_posts($args);
+        
+        foreach ($catPost as $post) : setup_postdata($post); ?>
         <?php
-                        $titulo = get_the_title();
-                        $categoria = get_the_category();
-
-                        $categoria = $categoria[0]->name;
-
-                        $post_id = get_category(get_cat_ID($categoria));
-                        $gambiarra = 0;
-                        
-                        if (isset($categories[get_cat_ID($categoria)])) {
-                            $gambiarra = $categories[get_cat_ID($categoria)];
-                            $categories[get_cat_ID($categoria)] += 1;
-                        } else {
-                            $categories[get_cat_ID($categoria)] = 1;
-                        }
-                        
-                        $post_id = $post_id->count - $gambiarra;
-                    ?>
+          $titulo = get_the_title();
+        ?>
         <div class="hover-scale minus hover-yellow">
           <div class="home thumbnail">
             <a href="<?php the_permalink() ?>">
@@ -123,7 +94,6 @@ Template Name: Homepage
             </a>
           </div>
           <div class="home title">
-            <h3 class="no-margin montserrat inherit post-tag"><?php echo $categoria . " #" . $post_id ?>:</h3>
             <h2 class="no-margin montserrat bold inherit post-title"><?php echo $titulo ?></h2>
             <br>
           </div>
